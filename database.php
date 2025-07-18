@@ -1,0 +1,14 @@
+<?php
+$host = "localhost";
+$username = "root"; // default XAMPP user
+$password = "";     // default XAMPP has no password
+$database = "mass"; // use your actual database name
+
+$conn = new mysqli($host, $username, $password, $database);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
+

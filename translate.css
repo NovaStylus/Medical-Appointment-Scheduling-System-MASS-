@@ -1,0 +1,51 @@
+
+/* Hide large Google Translate top banner and skip translate elements */
+.goog-te-banner-frame.skiptranslate,
+body > .skiptranslate,
+iframe.goog-te-banner-frame {
+  display: none !important;
+  height: 0 !important;
+  visibility: hidden !important;
+}
+
+body {
+  top: 0px !important;
+}
+
+/* Hide Google logo and "Powered by" text */
+.goog-logo-link,
+.goog-te-gadget span {
+  display: none !important;
+}
+
+/* Style the language dropdown */
+.goog-te-combo {
+  font-size: 14px !important;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  margin-left: 8px;
+  min-width: 90px; /* optional to keep width consistent */
+}
+
+/* Hover effect on dropdown */
+.goog-te-combo:hover {
+  border-color: #007bff;
+}
+
+/* Ensure the translate element container stays on top */
+#google_translate_element {
+  position: relative;
+  z-index: 1000;
+}
+
+/* Optional: add icon spacing in navbar */
+#google_translate_element_wrapper i {
+  margin-right: 6px;
+  color: white;
+  font-size: 16px;
+  user-select: none;
+}
